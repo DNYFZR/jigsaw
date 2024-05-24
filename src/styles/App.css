@@ -1,0 +1,204 @@
+#root {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.logo {
+  position: absolute;
+  left: 2vh;
+  top: 2vh;
+  height: 4em;
+}
+
+
+/* App Controller */
+.app-logo {
+  display: flex;
+}
+
+.app-control {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10vw;
+  justify-content: space-evenly;
+}
+
+.app-control-button {
+  color: gainsboro;
+  border: none;
+  font-weight: bold;
+}
+
+.app-control-button-selected {  
+  border-bottom: 1px dashed lightskyblue;
+  font-weight: bold;
+  border-radius: 0pc;
+}
+
+.app-element{
+  padding-top: 2vh;
+  }
+
+/* Components */
+
+/* Home */
+.list-container {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Contact Form */
+.contact-form-button {
+  background-color: black;
+  border-radius: 30px;
+  padding: 1.5% 6%;
+}
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+.contact-form {
+  align-items:center;
+  display: inline-block;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+
+.contact-form-input {
+  width: 100vw;
+  justify-content: space-evenly;
+  font-weight: bold;
+  margin: 2%;
+  }
+
+.contact-form-message textarea {
+  text-align: center;
+  border-radius: 25px;
+  text-indent: 1% ;
+  font-size: large;
+  width: 60vw;
+  height: 30vh;
+  margin-bottom: 20px;
+}
+
+.contact-form-popup {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  border-radius: 30px;
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-form-invalid {
+  border: 1px solid rgb(201, 7, 7);
+}
+
+/* Text Summarization */
+.text-summary-input {
+  border: none;
+  text-align: center;
+  height: 40vh;
+  width: 90vw;
+}
+
+.text-summary-output {
+  border: none;
+  text-align: center;
+  height: 30vh;
+  width: 90vw;
+}
+
+.text-summary-button {
+  background-color: black;
+  border: none;
+}
+
+/* Object Detection */
+.object-detection-input {
+  border: none;
+  text-align: center;
+  height: 20vh;
+  width: 160vh;
+}
+
+.object-detection-output {
+  border: none;
+  text-align: center;
+  height: 40vh;
+  width: 160vh;
+}
+
+.object-detection-button {
+  background-color: black;
+  border: none;
+}
+
+/* News Ticker */
+.headline-bar {
+  overflow: hidden;
+  border: 1px solid lightblue;
+  border-left: none;
+  border-right: none;
+  white-space: nowrap;
+}
+
+.headline {
+  display: inline-block;
+  animation: scroll 60s linear infinite;
+  color: #c7c7c7;
+}
+
+@keyframes scroll { 
+  0%{
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}
+
+/* Image Analyser */
+.ia-results {
+  display: flex;
+  text-align: left;
+  padding-left: calc(10% + 20vw);
+}
+
+.ia-image {
+  display: flex;
+  margin: 0 auto;
+  border-radius: 30px;
+  max-height: 50vh;
+  padding: 1vh;
+  }
+
+input[type="file"] {
+  display: none;
+}
+
+.ia-file-upload {
+  background-color: black;
+  color: whitesmoke;
+  border: none;
+  border-radius: 30px;
+  min-width: calc(2px + 8vmin);
+  padding: 0.6em 2.0em;
+  margin: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+}

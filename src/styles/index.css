@@ -1,0 +1,79 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(218, 217, 217, 0.87);
+  background-color: rgba(5, 37, 92, 0.735);
+
+  font-synthesis: none; 
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 90vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+textarea {
+  border: 15px solid transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  outline: 1px solid #dadcde;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  border-radius: 30px;
+  min-width: calc(2px + 8vmin);
+  padding: 0.6em 2.4em;
+  margin: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding: 1%;
+  min-width: 16vw;
+  background-color: black;
+  
+}
+
+select {
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding: 1%;
+  min-width: 16vw;
+  text-overflow: ellipsis;
+}
+
+
+label {
+  padding: 12px;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+li {
+  padding: 1vh 2vw;
+}
